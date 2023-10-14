@@ -16,7 +16,7 @@ const HeroSection = () => {
       <div className="flex py-[84px] pl-7 flex-col md:flex-row">
         <div className="md:w-1/2 py-11 flex-row w-full">
           <div className="md:w-[600px]">
-            <h2 className="text-bold md:text-[65px] text-[30px]">
+            <h2 className="text-bold md:text-[59px] text-[30px] font-popp">
               Find{" "}
               <span className="bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">
                 Partners
@@ -43,7 +43,7 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="md:w-1/2 w-full ">
-          <div className="flex gap-2 px-10">
+          <div className="flex gap-2 px-7">
             <div className="w-1/3 items-baseline pt-20">
               <img
                 src={HeroOne}
