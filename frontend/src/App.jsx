@@ -1,12 +1,13 @@
-import './App.css'
-
+import "./App.css";
+import NavBar from "./components/navbar/Navbar";
 function App() {
-
   return (
     <>
-    <h1 className='text-lg font-extrabold'>Roshan Jaiswal</h1>
+      <div>
+        <NavBar/>
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
