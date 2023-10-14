@@ -22,10 +22,12 @@ const NavBar = () => {
   ];
 
   return (
-    <div className="flex flex-shrink-0 justify-between items-center w-full h-16 fixed px-4">
+    <div className="flex flex-shrink-0 justify-between items-center w-full h-16 sticky px-4 md:pl-6">
       <div className=" flex items-center w-full">
         <Link to="/" smooth duration={700}>
-          <img src={logo} alt="logo" />
+          <div className="cursor-pointer">
+            <img src={logo} alt="logo" />
+          </div>
         </Link>
 
         <ul className="hidden md:flex">
