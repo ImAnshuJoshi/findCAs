@@ -93,7 +93,6 @@ const Solution = () => {
 
   return (
     <div className="px-7 bg-[#FAFBFC]">
-      <div>
         <h2 className="text-bold md:text-[65px] text-[30px] text-center pt-12 font-popp">
           Want To{" "}
           <span className="bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">
@@ -101,7 +100,6 @@ const Solution = () => {
           </span>{" "}
           Us
         </h2>
-      </div>
       <div className="" style={solutionStyle}>
         <div className="">
           <p className="text-center h-[38px] text-[25px] font-popp">
