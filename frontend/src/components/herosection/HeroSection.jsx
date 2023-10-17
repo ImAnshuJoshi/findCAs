@@ -14,7 +14,7 @@ const HeroSection = () => {
         <NavBar />
       </div>
       <div>
-      <div className="flex py-[84px] pl-7 flex-col md:flex-row relative">
+      <div className="flex py-[84px] pl-7 flex-col md:flex-row relative overflow-hidden">
         <div className="md:w-1/2 py-11 flex-row w-full">
           <div className="md:w-[600px]">
             <h2 className="text-bold md:text-[59px] text-[30px] font-popp">
@@ -71,8 +71,7 @@ const HeroSection = () => {
         </div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="1536"
-            height="210"
+            width="100vw"
             viewBox="0 0 1536 210"
             fill="none"
             className="absolute inset-x-0 bottom-0 -z-10"
