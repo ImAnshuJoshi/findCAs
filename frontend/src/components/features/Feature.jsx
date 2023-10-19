@@ -2,10 +2,11 @@ import ConnectIcon from "../../assets/icon-park-twotone_enquire.svg";
 import ResearchIcon from "../../assets/icon-park-twotone_table-report.svg";
 import AcademyIcon from "../../assets/icon-park-twotone_degree-hat.svg";
 import SearchIcon from "../../assets/icon-park-twotone_search.svg";
+import Student from "../../assets/Student.png"
 const Feature = () => {
   return (
-    <div id="features" className="px-7 py-20 w-full md:flex bg-white">
-      <div className=" md:w-1/2">
+    <div id="features" className="px-7 py-20 md:flex bg-white ">
+      <div className=" md:w-1/2 w-full">
         <p className="text-bold md:text-[65px] text-[30px] font-popp text-center md:text-start">
           <span className="bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">
             All-in-One
@@ -56,9 +57,8 @@ const Feature = () => {
         </div>
       </div>
 
-      <div className=" md:w-1/2 relative">
-        <div className="bg-gray-700 h-16 w-16 absolute inset-y-0 right-0">student</div>
-        <div className="bg-gray-700 h-16 w-16 absolute inset-x-0 bottom-[62px]">Teacher</div>
+      <div className=" md:w-1/2 flex justify-center">
+        <img src={Student} alt="student" className=" overflow-hidden" />
       </div>
     </div>
   );
