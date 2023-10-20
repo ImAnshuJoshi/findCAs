@@ -7,12 +7,12 @@ import {
 } from "react-icons/fa";
 const Footer = () => {
   return (
-    <div className="bg-gradient-to-r from-primary to-secondary to-[143.96%]">
+    <div id="about" className="bg-gradient-to-r from-primary to-secondary to-[143.96%]">
       <div className="px-7 md:flex pt-8 md:space-y-0 space-y-6 justify-around pb-52">
         <div>
           <img src={Logofooter} alt="" className="pb-4" />
           <p className=" text-sm inline-block w-[272px] text-white">
-            India's first platform dedicated to simplifying partner search
+            India&apos;s first platform dedicated to simplifying partner search
           </p>
         </div>
         <div>
