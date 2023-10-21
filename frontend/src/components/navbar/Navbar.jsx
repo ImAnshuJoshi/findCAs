@@ -36,7 +36,7 @@ const NavBar = () => {
               key={id}
               className="px-4 py-5 px cursor-pointer capitalize font-medium text-black hover:scale-110 duration-200 "
             >
-              <Link to={link} smooth duration={700}>
+              <Link to={link} smooth duration={700} >
                 <div className="flex gap-2 items-center justify-center">
                   <div className="text-[18px]"> {link} </div>
                   <RiArrowDownSLine size={24} />
