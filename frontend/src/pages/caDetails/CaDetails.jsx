@@ -20,7 +20,7 @@ const caDetails = () => {
             <span className=" font-popp text-xl text-primary">4.8</span>
             <span className=" font-popp text-xl">(89)</span>
           </div>
-          <div className="w-full bg-white h-[216px] rounded-[20px] shadow-[2px_4px_15px_0_rgba(133,133,167,0.25)]">
+          <div className="w-full bg-white rounded-[20px] shadow-[2px_4px_15px_0_rgba(133,133,167,0.25)]">
             <div className="px-7">
               <div className=" flex items-center justify-between py-7">
                 <span className=" leading-8 font-popp text-xl">
@@ -34,7 +34,7 @@ const caDetails = () => {
                   Delivers the job within 2 days
                 </span>
               </div>
-              <div className=" my-6 flex justify-between gap-2">
+              <div className=" my-6 flex justify-between gap-2 pb-[23px]">
                 <button className=" w-[220px] font-popp bg-primary text-white py-[10px] px-5 rounded-[10px] hover:bg-blue-400">
                   Request Proposal
                 </button>
@@ -44,7 +44,7 @@ const caDetails = () => {
               </div>
             </div>
           </div>
-          <div className="rounded-[20px] shadow-[2px_4px_15px_0_rgba(133,133,167,0.25)] mt-16 md:mt-8 w-full  px-7">
+          <div className="rounded-[20px] shadow-[2px_4px_15px_0_rgba(133,133,167,0.25)] md:mt-8 w-full  px-7">
             <p className=" font-popp text-4xl font-bold py-7">
               What people say?
             </p>
@@ -58,7 +58,7 @@ const caDetails = () => {
           </div>
         </div>
         {/* .............................................. */}
-        <div className="md:w-3/5 w-full md:my-0 my-16 ">
+        <div className="md:w-3/5 w-full md:my-0 my-8 ">
           <img
             src="https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg"
             alt=""
