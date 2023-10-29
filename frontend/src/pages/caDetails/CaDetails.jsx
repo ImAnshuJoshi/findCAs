@@ -3,7 +3,9 @@ import Footer from "../../components/footer/Footer";
 import StarIcon from "@mui/icons-material/Star";
 import CalendarMonth from "@mui/icons-material/CalendarMonth";
 import RecommendationCards from "../../components/recommCards/RecommendationCards";
+// import { useParams } from "react-router-dom";
 const caDetails = () => {
+  // const {name}= useParams();
   return (
     <div>
       <NavBar />
