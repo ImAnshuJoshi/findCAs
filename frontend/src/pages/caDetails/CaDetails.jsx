@@ -91,7 +91,7 @@ const caDetails = () => {
           </div>
           {/* .............................................. */}
           <div className="md:w-3/5 w-full md:my-0 my-8 ">
-            <img src={data.image} alt="" className=" w-[733px] h-[412px]" />
+            <img src={data.image} alt="" className=" w-[733px] h-[412px] rounded-[20px]" />
             <div>
               <p className="font-popp text-4xl font-bold my-8">
                 About {data.name}
