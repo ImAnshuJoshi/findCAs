@@ -4,9 +4,17 @@ import { useNavigate } from "react-router-dom";
 
 const SearchBar = () => {
   const [searchInput, setSearchInput] = useState("");
+
   const handleChange = (event) => {
     event.preventDefault();
     setSearchInput(event.target.value);
+  };
+
+  const handleKeyPress = (event) => {
+    if (event.key === "Enter") {
+      event.preventDefault(); // Prevent the default behavior of the Enter key
+      navigate(`/caDetails/${searchInput}`);
+    }
   };
 
   const navigate = useNavigate();
@@ -20,6 +28,8 @@ const SearchBar = () => {
         id="search"
         value={searchInput}
         onChange={handleChange}
+        onKeyPress={handleKeyPress}
+
         className=" w-full rounded-l-[10px] border-none h-[73px] px-4"
       />
       <button
