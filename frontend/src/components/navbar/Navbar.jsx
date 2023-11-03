@@ -2,9 +2,11 @@ import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { RiArrowDownSLine } from "react-icons/ri";
 import { Link } from "react-scroll";
+import { useNavigate } from "react-router-dom";
 import logo from "../../assets/logo.png";
 const NavBar = () => {
   const [nav, setNav] = useState(false);
+  const navigate=useNavigate()
 
   const links = [
     {
@@ -24,7 +26,7 @@ const NavBar = () => {
   return (
     <div className="flex flex-shrink-0 justify-between items-center w-full h-16 sticky px-4 md:pl-6">
       <div className=" flex items-center w-full">
-        <Link to="/" smooth duration={700}>
+        <Link to="/" smooth duration={700} onClick={()=>navigate("/")}>
           <div className="cursor-pointer">
             <img src={logo} alt="logo" />
           </div>

@@ -100,7 +100,7 @@ const CaDetails = () => {
             <img
               src={data.image}
               alt=""
-              className=" w-[733px] h-[412px] rounded-[20px]"
+              className=" w-[733px] h-[412px] rounded-[20px] object-top object-cover"
             />
             <div>
               <p className="font-popp text-4xl font-bold my-8">

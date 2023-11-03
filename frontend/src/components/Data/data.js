@@ -2,7 +2,7 @@ const data = [
     {
       "id": 1,
       "name": "Michael Jackson",
-      "image": "https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?fit=crop&w=800&q=80",
+      "image": "https://images.pexels.com/photos/7821702/pexels-photo-7821702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       "intro": "Expertise in accounting and finance, specializing in financial statements and auditing.",
       "rating": 4.8,
       "reviewCount": 89,
@@ -25,7 +25,7 @@ const data = [
     {
       "id": 2,
       "name": "Lucy Brown",
-      "image": "https://images.unsplash.com/photo-1556746818-17b142980bb2?fit=crop&w=800&q=80",
+      "image": "https://images.unsplash.com/photo-1556157382-97eda2d62296?fit=crop&w=800&q=80",
       "intro": "Dedicated accountant with expertise in taxation and corporate finance.",
       "rating": 4.5,
       "reviewCount": 75,
@@ -48,7 +48,7 @@ const data = [
     {
       "id": 3,
       "name": "Robert Smith",
-      "image": "https://images.unsplash.com/photo-1517433456452-f9633a875fbc?fit=crop&w=800&q=80",
+      "image": "https://images.pexels.com/photos/3760263/pexels-photo-3760263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       "intro": "Experienced in overseeing financial management of medium to large enterprises.",
       "rating": 4.6,
       "reviewCount": 65,
@@ -78,7 +78,7 @@ const data = [
     {
       "id": 4,
       "name": "Anita Patel",
-      "image": "https://images.unsplash.com/photo-1563990112129-a9a72c04f5d7?fit=crop&w=800&q=80",
+      "image": "https://images.pexels.com/photos/3756681/pexels-photo-3756681.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       "intro": "Passionate about helping startups navigate the complexities of financial compliance.",
       "rating": 4.9,
       "reviewCount": 95,
@@ -101,7 +101,7 @@ const data = [
     {
       "id": 5,
       "name": "Johnathan Lee",
-      "image": "https://images.unsplash.com/photo-1556157382-97eda2d62296?fit=crop&w=800&q=80",
+      "image": "https://images.pexels.com/photos/10376237/pexels-photo-10376237.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       "intro": "Expert in streamlining business operations with financial acumen.",
       "rating": 4.5,
       "reviewCount": 72,

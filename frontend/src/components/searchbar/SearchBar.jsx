@@ -28,7 +28,7 @@ const SearchBar = () => {
         id="search"
         value={searchInput}
         onChange={handleChange}
-        onKeyPress={handleKeyPress}
+        onKeyDown={handleKeyPress}
 
         className=" w-full rounded-l-[10px] border-none h-[73px] px-4"
       />
