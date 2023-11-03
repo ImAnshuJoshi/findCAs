@@ -1,6 +1,6 @@
 import "./App.css";
 import Landing from "./pages/landingPage/Landing.jsx";
-import CaDetails from "./pages/caDetails/caDetails.jsx";
+import CaDetails from "./pages/caDetails/CaDetails.jsx";
 import { Routes, Route } from "react-router-dom";
 function App() {
   return (
