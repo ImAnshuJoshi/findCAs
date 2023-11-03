@@ -8,5 +8,6 @@ export default defineConfig({
     rollupOptions: {
       external: ['react-scroll'],
     },
+    chunkSizeWarningLimit: 2000,
   },
 });
