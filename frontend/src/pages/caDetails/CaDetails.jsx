@@ -3,44 +3,50 @@ import Footer from "../../components/footer/Footer";
 import StarIcon from "@mui/icons-material/Star";
 import CalendarMonth from "@mui/icons-material/CalendarMonth";
 import RecommendationCards from "../../components/recommCards/RecommendationCards";
-import { useState } from "react";
-// import { useParams } from "react-router-dom";
-const caDetails = () => {
-  // const {name}= useParams();
+import { useEffect, useState } from "react";
+import data from "../../components/Data/data";
+import { useParams } from "react-router-dom";
 
-  const [details, setDetails] = useState([
-    {
-      id: 1,
-      name: "Michael Jackson",
-      image:
-        "https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?fit=crop&w=800&q=80",
-      intro:
-        "Expertise in accounting and finance, specializing in financial statements and auditing.",
-      rating: 4.8,
-      reviewCount: 89,
-      taskComplexity: "Basic to complex tasks",
-      price: "€4,370",
-      deliveryTime: "Delivers within 2 days",
-      testimonial: {
-        text: "Exceptional service in managing personal finances and deep understanding of financial markets.",
-        author: "John Doe",
-      },
-      about: {
-        from: "INDIA",
-        partnerSince: 2011,
-        averageResponseTime: "30 minutes",
-        description:
-          "Professional Chartered Accountant offering diverse accounting and financial services.",
-        services: ["Financial accounting", "Bookkeeping", "Balance Sheets"],
-        benefits: ["One-time delivery", "24/7 support"],
-      },
-    },
-  ]);
+const CaDetails = () => {
+  const { name } = useParams();
+  console.log(name);
+  const [details, setDetails] = useState([]);
+  const [notFound, setNotFound] = useState(false);
+  useEffect(() => {
+    for (let i = 0; i < data.length; i++) {
+      console.log(i);
+      if (data[i].name.toLowerCase().replace(/\s/g, '') == name.toLowerCase().replace(/\s/g, '')) {
+        console.log(data[i]);
+        setNotFound(false);
+
+        setDetails([data[i]]);
+        break;
+      }
+      setNotFound(true);
+    }
+  }, [name]);
+
+  if (notFound) {
+    return (
+      <div>
+        <NavBar />
+        <div className="h-[400px] flex items-center justify-center bg-gray-200">
+          <p className="text-lg font-semibold text-gray-600">
+            CA details for {name} not available.
+          </p>
+        </div>
+        <RecommendationCards />
+
+        <Footer />
+      </div>
+    );
+  }
+
   return (
     <div>
       <NavBar />
       {details.map((data, index) => (
-        <div key={index} className="px-7 py-7 md:flex w-full">
+        <div key={index} id="caData" className="px-7 py-7 md:flex w-full">
           <div className="md:w-2/5 mr-8 w-full">
             <p className="text-3xl font-popp font-bold">{data.name}</p>
             <p className=" text-xl font-popp pt-4 pr-4">
@@ -91,7 +97,11 @@ const caDetails = () => {
           </div>
           {/* .............................................. */}
           <div className="md:w-3/5 w-full md:my-0 my-8 ">
-            <img src={data.image} alt="" className=" w-[733px] h-[412px] rounded-[20px]" />
+            <img
+              src={data.image}
+              alt=""
+              className=" w-[733px] h-[412px] rounded-[20px]"
+            />
             <div>
               <p className="font-popp text-4xl font-bold my-8">
                 About {data.name}
@@ -164,4 +174,4 @@ const caDetails = () => {
   );
 };
 
-export default caDetails;
+export default CaDetails;

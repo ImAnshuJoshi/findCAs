@@ -2,20 +2,12 @@ import NavBar from "../navbar/Navbar";
 import HeroOne from "../../assets/Hero1.jpeg";
 import HeroTwo from "../../assets/Hero2.jpeg";
 import HeroThree from "../../assets/Hero3.jpeg";
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import SearchBar from "../searchbar/searchBar";
 const HeroSection = () => {
   const gradientStyle = {
     background:
       "linear-gradient(75deg, #FEDDEE 0%, #FCF6FC 31.77%, #C5EAED 64.58%, #FDDDFE 100%)",
   };
-
-  const [search, setSearch] = useState('');
-  const handleChange = (event) => {
-    setSearch(event.target.value);
-  };
-
-  const navigate= useNavigate();
 
   return (
     <div className="w-full backdrop-blur-2xl" style={gradientStyle}>
@@ -38,23 +30,7 @@ const HeroSection = () => {
                 services are listed and visible to a myriad of businesses
                 seeking CA’s for compliance support
               </p>
-              <div className="flex">
-                <input
-                  type="search"
-                  name="search"
-                  placeholder="Search by name"
-                  id="search"
-                  value={search}
-                  onChange={handleChange}
-                  className=" w-full rounded-l-[10px] border-none h-[73px] px-4"
-                />
-                <button
-                  className="bg-primary rounded-[10px] text-white px-9 hover:text-black"
-                  onClick={() => navigate(`/caDetails/${search}`)}  //,,,,,,,,,,,
-                >
-                  Search
-                </button>
-              </div>
+              <SearchBar />
             </div>
           </div>
           <div className="md:w-1/2 w-full ">
