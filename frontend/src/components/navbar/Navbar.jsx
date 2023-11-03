@@ -1,13 +1,12 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { RiArrowDownSLine } from "react-icons/ri";
-import { Link, useNavigate } from "react-router-dom"; // Import useNavigate
+import { Link } from "react-scroll";
 import logo from "../../assets/logo.png";
-
+import { useNavigate } from "react-router-dom";
 const NavBar = () => {
   const [nav, setNav] = useState(false);
-  const navigate = useNavigate(); // Initialize the navigate function
-
+const navigate =useNavigate();
   const links = [
     {
       id: 1,
@@ -25,9 +24,8 @@ const NavBar = () => {
 
   return (
     <div className="flex flex-shrink-0 justify-between items-center w-full h-16 sticky px-4 md:pl-6">
-      <div className="flex items-center w-full">
-        <Link to="/" smooth duration={700} onClick={() => navigate("/")}>
-          {/* Add onClick to navigate to the homepage */}
+      <div className=" flex items-center w-full">
+        <Link to="/" smooth duration={700} onClick={()=>navigate("/")}>
           <div className="cursor-pointer">
             <img src={logo} alt="logo" />
           </div>
@@ -39,7 +37,7 @@ const NavBar = () => {
               key={id}
               className="px-4 py-5 px cursor-pointer capitalize font-medium text-black hover:scale-110 duration-200 "
             >
-              <Link to={link} smooth duration={700}>
+              <Link to={link} smooth duration={700} >
                 <div className="flex gap-2 items-center justify-center">
                   <div className="text-[18px]"> {link} </div>
                   <RiArrowDownSLine size={24} />
@@ -73,10 +71,7 @@ const NavBar = () => {
               className="px-4 cursor-pointer capitalize py-6 text-4xl"
             >
               <Link
-                onClick={() => {
-                  setNav(!nav);
-                  navigate(link); // Update to navigate to the respective link
-                }}
+                onClick={() => setNav(!nav)}
                 to={link}
                 smooth
                 duration={700}
