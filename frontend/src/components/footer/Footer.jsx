@@ -1,4 +1,3 @@
-import Logofooter from "../../assets/Logofooter.png";
 import {
   FaFacebook,
   FaInstagram,
@@ -10,7 +9,7 @@ const Footer = () => {
     <div id="about" className="bg-gradient-to-r from-primary to-secondary to-[143.96%]">
       <div className="px-7 md:flex pt-8 md:space-y-0 space-y-6 justify-around pb-52">
         <div>
-          <img src={Logofooter} alt="" className="pb-4" />
+        <p className="font-extrabold text-2xl italic text-white">FindCAs</p>
           <p className=" text-sm inline-block w-[272px] text-white">
             India&apos;s first platform dedicated to simplifying partner search
           </p>
@@ -52,7 +51,7 @@ const Footer = () => {
       </div>
       <div className=" pm-11 bg-black">
         <p className="text-white text-xs text-center py-4 ">
-          Registered trademark of India Private Limited © 2023 loerumipsum Inc.
+          Registered trademark of CodeCortex.
           All Rights Reserved
         </p>
       </div>

@@ -128,7 +128,7 @@ const data = [
     {
       "id": 6,
       "name": "Sophia Fernandez",
-      "image": "https://images.unsplash.com/photo-1581091226825-c6a89e7e4801?fit=crop&w=800&q=80",
+      "image": "https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg",
       "intro": "Champion in guiding SMEs through their financial journeys with transparency and integrity.",
       "rating": 4.8,
       "reviewCount": 88,
@@ -151,7 +151,7 @@ const data = [
     {
       "id": 7,
       "name": "William O'Connell",
-      "image": "https://images.unsplash.com/photo-1542751371-6533d14d705f?fit=crop&w=800&q=80",
+      "image": "https://images.pexels.com/photos/7472423/pexels-photo-7472423.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       "intro": "Master of tax strategy and international finance regulations.",
       "rating": 4.6,
       "reviewCount": 78,
@@ -178,7 +178,7 @@ const data = [
     {
       "id": 8,
       "name": "Nina Johansson",
-      "image": "https://images.unsplash.com/photo-1587620962725-abab7fe55159?fit=crop&w=800&q=80",
+      "image": "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       "intro": "Specializes in financial forensics and fraud examination.",
       "rating": 4.9,
       "reviewCount": 92,
@@ -205,7 +205,7 @@ const data = [
     {
       "id": 9,
       "name": "Oliver Bernard",
-      "image": "https://images.unsplash.com/photo-1579637305941-57a5d3807b1d?fit=crop&w=800&q=80",
+      "image": "https://images.pexels.com/photos/7845101/pexels-photo-7845101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       "intro": "Dedicated to empowering non-profits with financial strategies and sustainability.",
       "rating": 4.7,
       "reviewCount": 85,
@@ -232,7 +232,7 @@ const data = [
     {
       "id": 10,
       "name": "Isabella Martinez",
-      "image": "https://images.unsplash.com/photo-1588392382834-a891154bca4d?fit=crop&w=800&q=80",
+      "image": "https://images.pexels.com/photos/3779760/pexels-photo-3779760.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       "intro": "Expert in mergers, acquisitions, and corporate restructuring with a decade of experience.",
       "rating": 4.8,
       "reviewCount": 90,

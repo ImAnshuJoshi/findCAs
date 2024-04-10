@@ -6,15 +6,14 @@ import { Button } from "react-scroll";
 const RecommendationCards = () => {
   const navigate = useNavigate();
   const { name } = useParams();
-  console.log(name);
-  // Slice the first three elements from the data array
-  let recommendedDetails = data.slice(0, 4);
-  recommendedDetails = recommendedDetails.filter((d) => {
-    console.log(d.name, name);
-    return d.name != name;
-  });
 
-  recommendedDetails = recommendedDetails.slice(0, 3);
+  // Shuffle the data array to get random recommendations
+  const shuffledData = data.sort(() => Math.random() - 0.5);
+
+  // Filter out the current item by name and pick the first 3 recommended items
+  const recommendedDetails = shuffledData
+    .filter((d) => d.name !== name)
+    .slice(0, 3);
 
   return (
     <div className="px-7 my-[132px]">
