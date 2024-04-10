@@ -37,7 +37,7 @@ const SearchBar = () => {
         className="w-full rounded-l-[10px] border-none h-[73px] px-4"
       />
       <button
-        className="bg-primary rounded-[10px] text-white px-9 hover:text-black"
+        className="bg-primary rounded-r-[10px] text-white px-9 hover:text-black"
         onClick={handleSearch}
       >
         Search
